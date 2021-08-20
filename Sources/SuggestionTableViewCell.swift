@@ -42,6 +42,6 @@ open class SuggestionTableViewCell<T: SuggestionValue>: UITableViewCell, EurekaS
     
     open func setupForValue(_ value: T) {
         textLabel?.text = value.suggestionString
-        detailTextLabel?.text = "Hello"
+        detailTextLabel?.text = value.subtitleString
     }
 }
