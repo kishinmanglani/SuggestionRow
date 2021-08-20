@@ -13,7 +13,7 @@ extension String: SuggestionValue {
         return self
     }
     
-    public var subtitleString: String {
+    public var subtitleString: String? {
         return self
     }
 }
