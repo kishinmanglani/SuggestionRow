@@ -12,4 +12,8 @@ extension String: SuggestionValue {
     public var suggestionString: String {
         return self
     }
+    
+    public var subtitleString: String {
+        return self
+    }
 }
