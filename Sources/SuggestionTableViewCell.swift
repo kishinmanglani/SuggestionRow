@@ -18,7 +18,7 @@ public protocol EurekaSuggestionTableViewCell {
 open class SuggestionTableViewCell<T: SuggestionValue>: UITableViewCell, EurekaSuggestionTableViewCell {
     public typealias S = T
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
         initialize()
     }
     
@@ -42,5 +42,6 @@ open class SuggestionTableViewCell<T: SuggestionValue>: UITableViewCell, EurekaS
     
     open func setupForValue(_ value: T) {
         textLabel?.text = value.suggestionString
+        detailTextLabel?.text = "Hello"
     }
 }
