@@ -10,6 +10,7 @@ import Eureka
 
 public protocol SuggestionValue: Equatable, InputTypeInitiable {
     var suggestionString: String { get }
+    var subtitleString: String? { get }
 }
 
 /// Generic suggestion row superclass that defines how to get a list of suggestions based on user input.
